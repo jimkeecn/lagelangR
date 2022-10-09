@@ -7,10 +7,10 @@ import cors from 'cors';
 import validator from 'validator';
 import bcrypt from 'bcrypt';
 var shipArray = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
-sortShipArrayByPopularity();
 function sortShipArrayByPopularity() {
   shipArray.sort((a, b) => (a.popularity < b.popularity) ? 1 : -1)
 }
+sortShipArrayByPopularity();
 
 const app = express();
 var corsOptions = {
