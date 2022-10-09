@@ -1,0 +1,35 @@
+:host{
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+}
+p{
+    margin:10px 0;
+}
+ul{
+list-style-type: none;
+padding:0;
+}
+
+.field{
+    width:100%;
+}
+
+.mat-hint{
+    font-size: 0.8rem !important;
+    font-weight: 500 !important;
+}
+
+.mat-form-field{
+    margin-bottom: 20px;
+}
+
+.return{
+    margin-top:40px !important;
+}
+
+h5.code{
+    font-size:2rem;
+    text-align: center;
+    width: 100%;
+}

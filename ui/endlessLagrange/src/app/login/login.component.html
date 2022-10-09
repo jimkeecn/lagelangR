@@ -1,0 +1,40 @@
+<div class="body">
+    <form [formGroup]="loginForm" *ngIf="!isFindCode">
+      <div class="logo">
+        <h1>拉格朗数据</h1>
+      </div>
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>请输入6位口令</mat-label>
+        <input matInput formControlName="code">
+      </mat-form-field>
+      <mat-form-field class="field" appearance="fill" *ngIf="isPassword">
+        <mat-label>请输入密码</mat-label>
+        <input matInput type="password" formControlName="password">
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="login()" *ngIf="!isPassword">根据口令查询</button>
+      <button mat-raised-button color="primary" (click)="loginWithPassword()" *ngIf="isPassword">登录</button>
+      <div class="bottom-container">
+        <a class="register" [routerLink]="['/register']">注册新账户</a>
+        <a class="register" (click)="isPassword = true" *ngIf="!isPassword">密码登录</a>
+        <a class="register" (click)="isPassword = false" *ngIf="isPassword">取消密码登录</a>
+        <a class="register" (click)="isFindCode = !isFindCode">{{isFindCode ? '返回登录' : '寻找口令'}}</a>
+      </div>
+    </form>
+    <form [formGroup]="codeForm"  *ngIf="isFindCode">
+      <div class="logo">
+        <h1>拉格朗数据</h1>
+      </div>
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>用户名</mat-label>
+        <input matInput formControlName="name" placeholder="例如: 王刚, Alan Wang">
+      </mat-form-field>
+      <mat-form-field class="field" appearance="fill">
+        <mat-label>生日</mat-label>
+        <input matInput type="date" formControlName="birthday">
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="findCode()">寻找口令</button>
+       <div class="bottom-container">
+        <a class="register" (click)="isFindCode = !isFindCode">{{isFindCode ? '返回登录' : '寻找口令'}}</a>
+      </div>
+    </form>
+  </div>

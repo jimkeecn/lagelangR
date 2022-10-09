@@ -1,0 +1,38 @@
+<div class="return">
+    <button mat-button (click)="return()">< 返回</button>
+</div>
+<div class="body">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>请输入玩家名字* </mat-label>
+        <input matInput [(ngModel)]="playerName">
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>请输入玩家编码*</mat-label>
+        <input matInput type="number" [(ngModel)]="playerCode" minlength="11" maxlength="11">
+      </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>请勾选所要添加的战舰</mat-label>
+        <mat-select [formControl]="warships" multiple (openedChange)="warshipSelected($event)">
+            <mat-optgroup *ngFor="let group of warshipGroup" [label]="group.namecn"
+                          [disabled]="group.disabled">
+              <mat-option *ngFor="let warship of group.warships" [value]="warship">
+                {{warship.name}}
+              </mat-option>
+            </mat-optgroup>
+        </mat-select>
+    </mat-form-field>
+    <mat-card>
+        1. 请在基础技术点数中只添加起始蓝点.例如V1.16<30>,基础技术点数为16,如果是金色标志基础技术点数请自觉增加100 <br>
+        2. 舰船评级仅供参考.舰船评级再最后会给出该玩家的总体参考评级。后期会根据每个船的数值自动计算该玩家可达到的最高战力。
+    </mat-card>
+    <mat-card *ngFor="let warship of warshipJson">
+        <mat-card-title>
+            {{warship.name}} - 评级: {{warship.rank}}
+        </mat-card-title>
+        <mat-card-content>
+            请输入基础技术点数
+            <input type="number" [(ngModel)]="warship.points" >
+        </mat-card-content>
+    </mat-card>
+    <button mat-raised-button color="primary" *ngIf="warshipJson.length > 0" (click)="submit()">添加</button>
+</div>

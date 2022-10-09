@@ -1,0 +1,33 @@
+<div class="body">
+    <div class="search-bar">
+        <mat-form-field class="full-width" appearance="fill">
+            <mat-label>搜索名字或者编号</mat-label>
+            <input matInput [(ngModel)]="selectValue" (keyup)="search()">
+          </mat-form-field>
+    </div>
+    <div class="result">
+        <ng-container>
+            <mat-card class="example-card"  *ngFor="let player of selectedValue">
+                <mat-card-header>
+                  <mat-card-title (click)="view(player.id)">{{player.name}} <span>({{player.id}})</span></mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <div class="warship" *ngFor="let ship of player.warships">
+                        <img [src]="getImg(ship.type)" [style.backgroundColor]="getColor(ship.points)"> 
+                        <span class="content">
+                            {{ship.shortname}}
+                        </span>
+                        <span class="point">
+                            {{getPoints(ship.points)}}
+                        </span>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </ng-container>
+      
+    </div>
+    <div class="actions">
+        <button mat-stroked-button color="primary" *ngIf="editable" (click)="add()">新添加</button>
+        <button mat-stroked-button color="primary" (click)="logout()">退出</button>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "uiserver",
+  "version": "1.0.0",
+  "description": "server of endless lagarang data hub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "junxili",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "node-json-db": "^2.1.0",
+    "validator": "^13.7.0"
+  }
+}

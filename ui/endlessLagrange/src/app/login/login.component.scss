@@ -1,0 +1,35 @@
+
+form button{
+    margin-top: 20px;
+    padding:20px;
+    width:100%;
+}
+.body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width:300px;
+    height: 300px;
+    margin:40px 0;
+}
+
+.field{
+    width:100%;
+}
+.mat-raised-button{
+    margin-bottom: 30px;
+}
+.register{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bottom-container{
+    display:flex;
+    justify-content: space-between;
+}
+
+

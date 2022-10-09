@@ -1,0 +1,13 @@
+<div *ngIf="!display">
+    <input type="text" placeholder="password" [(ngModel)]="password">
+    <button type="button" (click)="submitPassword()">Submit Password</button>
+</div>
+
+
+<div class="content" *ngIf="display">
+    <h5>Add Guild Access</h5>
+    <input type="text" placeholder="guild id" [(ngModel)]="guild_id">
+    <input type="text" placeholder="guild password" [(ngModel)]="guild_password">
+    <label><input type="checkbox" [(ngModel)]="guild_access_all"> Allow Access All Data</label>
+    <button type="button" (click)="submitGuild()">Add guild info</button>
+</div>

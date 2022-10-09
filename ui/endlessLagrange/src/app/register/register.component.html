@@ -1,0 +1,51 @@
+
+<ng-container *ngIf="!codeCompleted">
+    <h1>注册新账户</h1>
+    <ng-container *ngIf="!isShow">
+        <p>须知必看</p>
+        <ul>
+            <li><p>1. 本软件现在还处于个人开发和测试状态</p></li>
+            <li><p>2. 为了保护您其他账户的安全性，请不要使用你<b>平常使用的密码</b>，密码只是为了保护别人篡改你所记录的数据。</p></li>
+            <li><p>3. 注册完成后你会收到一个口令。口令是用来分享你所记录的数据。有口令没有密码无法改动你的数据</p></li>
+            <li><p>4. 请正确填写你的<b>名字和生日</b>，名字和生日是用来找回你的口令所用。</p></li>
+            <li><p>5. 如果<b>账号分享</b>出去后你的数据遭到他人篡改，本作者并没有权力保证你的数据的完整性并且没有回滚功能。</p></li>
+            <li><p>6. 本作者为该游戏的爱好者。此软件只是为了让玩家更好的管理对立盟的数据。方便盟内分享和快速查看玩家舰船信息</p></li>
+            <li><p>7. 如果有什么好想法和对本软件的改进的建议都可以跟作者沟通。作者邮箱:jimkeecn3@gmail.com</p></li>
+        </ul>
+        <button mat-raised-button color="primary" type="button" (click)="isShow = true">同意以上条款</button>
+    </ng-container>
+    
+    
+    <form [formGroup]="registerForm" *ngIf="isShow">
+        <mat-form-field class="field" appearance="fill">
+            <mat-label>用户名</mat-label>
+            <input matInput formControlName="name" placeholder="例如: 王刚, Alan Wang">
+            <mat-hint align="start"><strong>请不要使用特殊字符，如若导致账号异常请重新注册</strong> </mat-hint>
+        </mat-form-field>
+        <mat-form-field class="field" appearance="fill">
+            <mat-label>生日</mat-label>
+            <input matInput type="date" formControlName="birthday">
+        </mat-form-field>
+        <mat-form-field class="field" appearance="fill">
+            <mat-label>密码</mat-label>
+            <input matInput type="password" formControlName="password" minlength="7">
+            <mat-hint align="start"><strong>最少7位,暂时无找回密码功能,请自行保存</strong> </mat-hint>
+        </mat-form-field>
+        <mat-form-field class="field" appearance="fill">
+            <mat-label>请再次输入密码</mat-label>
+            <input matInput type="password" formControlName="passwordRepeat" minlength="7">
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="button" class="field" (click)="register()">注册</button>
+       
+    </form>
+
+</ng-container>
+
+<ng-container *ngIf="codeCompleted">
+    <h5>您的注册已经完成，请记录一下口令.</h5>
+    <h5 class="code">
+        <b>{{code}}</b>
+    </h5>
+</ng-container>
+
+<button  mat-button color="primary" type="button" class="field return" (click)="goBack()">返回</button>

@@ -1,0 +1,957 @@
+[
+    {
+        "id":1,
+        "rank":"S+",
+        "type":"hkmj",
+        "typecn":"航空母舰",
+        "name":"太阳鲸",
+        "shortname":"太阳鲸",
+        "popularity": 1
+    },
+    {
+        "id":2,
+        "rank":"S",
+        "type":"hkmj",
+        "typecn":"航空母舰",
+        "name":"南十字星元帅级",
+        "shortname":"南十字",
+        "popularity": 0
+    },
+    {
+        "id":3,
+        "rank":"A",
+        "type":"hkmj",
+        "typecn":"航空母舰",
+        "name":"CV3000",
+        "shortname":"3000",
+        "popularity": 1
+    },
+    {
+        "id":4,
+        "rank":"S+",
+        "type":"zlxyj",
+        "typecn":"战列巡洋舰",
+        "name":"新君士坦丁大帝级",
+        "shortname":"大帝",
+        "popularity": 0
+    },
+    {
+        "id":5,
+        "rank":"S",
+        "type":"zlxyj",
+        "typecn":"战列巡洋舰",
+        "name":"永恒风暴级",
+        "shortname":"永恒",
+        "popularity": 0
+    },
+    {
+        "id":6,
+        "rank":"S+",
+        "type":"zlxyj",
+        "typecn":"战列巡洋舰",
+        "name":"乌拉诺斯之矛级",
+        "shortname":"大矛",
+        "popularity": 1
+    },
+    {
+        "id":7,
+        "rank":"S",
+        "type":"zlxyj",
+        "typecn":"战列巡洋舰",
+        "name":"ST59级",
+        "shortname":"59",
+        "popularity": 1
+    },
+    
+    {
+        "id":8,
+        "rank":"B",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"KCCPV2.0-综合型",
+        "shortname":"2.0综合",
+        "popularity": 0
+    },
+    {
+        "id":9,
+        "rank":"A",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"KCCPV2.0-脉冲型",
+        "shortname":"2.0脉冲",
+        "popularity": 0
+    },
+    {
+        "id":10,
+        "rank":"C",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"KCCPV2.0-轨道炮型",
+        "shortname":"2.0轨道",
+        "popularity": 0
+    },
+    {
+        "id":11,
+        "rank":"B",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"KCCPV2.0-载机型",
+        "shortname":"2.0载机",
+        "popularity": 1
+    },
+    {
+        "id":12,
+        "rank":"A",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"CAS066级-综合型",
+        "shortname":"066综合",
+        "popularity": 1
+    },
+    {
+        "id":104,
+        "rank":"A",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"CAS066级-炮击型",
+        "shortname":"066炮击",
+        "popularity": 0
+    },
+    {
+        "id":13,
+        "rank":"C",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"CAS066级-载机型",
+        "shortname":"066载机",
+        "popularity": 0
+    },
+    {
+        "id":14,
+        "rank":"S",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"艾奥级-离子炮型",
+        "shortname":"艾奥离子",
+        "popularity": 1
+    },
+    {
+        "id":15,
+        "rank":"S",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"艾奥级-对舰型",
+        "shortname":"艾奥对舰",
+        "popularity": 0
+    },
+    {
+        "id":16,
+        "rank":"S",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"艾奥级-攻城型",
+        "shortname":"艾奥攻城",
+        "popularity": 0
+    },
+    {
+        "id":17,
+        "rank":"A",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"光锥级-通用型",
+        "shortname":"光锥通用",
+        "popularity": 1
+    },
+    {
+        "id":18,
+        "rank":"S",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"光锥级-防空型",
+        "shortname":"光锥防空",
+        "popularity": 0
+    },
+    {
+        "id":19,
+        "rank":"S",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"光锥级-突击型",
+        "shortname":"光锥突击",
+        "popularity": 0
+    },
+    {
+        "id":20,
+        "rank":"S",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"卡利斯托-鱼雷型",
+        "shortname":"普卡",
+        "popularity": 1
+    },
+    {
+        "id":21,
+        "rank":"S+",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"卡利斯托-对舰型",
+        "shortname":"重卡",
+        "popularity": 0
+    },
+    {
+        "id":22,
+        "rank":"A",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"卡利斯托-支援型",
+        "shortname":"卡托支援",
+        "popularity": 0
+    },
+    {
+        "id":23,
+        "rank":"S",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"奇美拉级-弹炮型",
+        "shortname":"奇美拉弹炮",
+        "popularity": 1
+    },
+    {
+        "id":24,
+        "rank":"S+",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"奇美拉级-重炮型",
+        "shortname":"奇美拉重炮",
+        "popularity": 0
+    },
+    {
+        "id":25,
+        "rank":"A",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"奇美拉级-防护型",
+        "shortname":"奇美拉防护",
+        "popularity": 0
+    },
+    {
+        "id":26,
+        "rank":"S+",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"狩猎者级-通用型",
+        "shortname":"狩猎通用",
+        "popularity": 1
+    },
+    {
+        "id":27,
+        "rank":"S",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"狩猎者级-战术型",
+        "shortname":"狩猎战术",
+        "popularity": 0
+    },
+    {
+        "id":28,
+        "rank":"S",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"狩猎者级-防空型",
+        "shortname":"狩猎防空",
+        "popularity": 0
+    },
+    {
+        "id":29,
+        "rank":"A",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"康纳马拉混沌级-轨道炮型",
+        "shortname":"康纳轨道",
+        "popularity": 0
+    },
+    {
+        "id":30,
+        "rank":"S",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"康纳马拉混沌级-等离子体型",
+        "shortname":"康纳离子",
+        "popularity": 0
+    },
+    {
+        "id":31,
+        "rank":"S",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"猎兵级-载机型",
+        "shortname":"猎兵载机",
+        "popularity": 1
+    },
+    {
+        "id":32,
+        "rank":"C",
+        "type":"xyj",
+        "typecn":"巡洋舰",
+        "name":"猎兵级-支援型",
+        "shortname":"猎兵支援",
+        "popularity": 0
+    },
+    {
+        "id":33,
+        "rank":"C",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"AC721-通用型",
+        "shortname":"721通用",
+        "popularity": 0
+    },
+    {
+        "id":34,
+        "rank":"B",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"AC721-导弹型",
+        "shortname":"721导弹",
+        "popularity": 0
+    },
+    {
+        "id":35,
+        "rank":"A",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"AC721-载机型",
+        "shortname":"721载机",
+        "popularity": 1
+    },
+    {
+        "id":36,
+        "rank":"C",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"阋神星级-火炮型",
+        "shortname":"阋神星火炮",
+        "popularity": 1
+    },
+    {
+        "id":37,
+        "rank":"S+",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"阋神星级-重炮型",
+        "shortname":"阋神重炮",
+        "popularity": 2
+    },
+    {
+        "id":38,
+        "rank":"A",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"阋神星级-装甲型",
+        "shortname":"阋神星装甲",
+        "popularity": 0
+    },
+    {
+        "id":39,
+        "rank":"A",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"谷神星级-载机型",
+        "shortname":"谷神载机",
+        "popularity": 1
+    },
+    {
+        "id":40,
+        "rank":"S",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"谷神星级-支援型",
+        "shortname":"谷神支援",
+        "popularity": 1
+    },
+    {
+        "id":41,
+        "rank":"A",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"谷神星级-战术型",
+        "shortname":"谷神战术",
+        "popularity": 0
+    },
+    {
+        "id":42,
+        "rank":"A",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"苔原级-支援型",
+        "shortname":"苔原支援",
+        "popularity": 1
+    },
+    {
+        "id":43,
+        "rank":"S+",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"苔原级-载机型",
+        "shortname":"苔原载机",
+        "popularity": 1
+    },
+    {
+        "id":44,
+        "rank":"A",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"枪骑兵-对舰型",
+        "shortname":"枪骑对舰",
+        "popularity": 1
+    },
+    {
+        "id":45,
+        "rank":"B",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"枪骑兵-综合型",
+        "shortname":"枪骑综合",
+        "popularity": 0
+    },
+    {
+        "id":46,
+        "rank":"A",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"枪骑兵-防空型",
+        "shortname":"枪骑防空",
+        "popularity": 0
+    },
+    {
+        "id":47,
+        "rank":"S",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"卫士-支援型",
+        "shortname":"卫士支援",
+        "popularity": 1
+    },
+    {
+        "id":48,
+        "rank":"S+",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"卫士-两栖型",
+        "shortname":"卫士两栖",
+        "popularity": 1
+    },
+    {
+        "id":49,
+        "rank":"S",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"卫士-脉冲型",
+        "shortname":"卫士脉冲",
+        "popularity": 0
+    },
+    {
+        "id":50,
+        "rank":"S",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"亚达伯拉级-通用型",
+        "shortname":"亚伯通用",
+        "popularity": 0
+    },
+    {
+        "id":51,
+        "rank":"A",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"亚达伯拉级-装甲型",
+        "shortname":"亚伯装甲",
+        "popularity": 0
+    },
+    {
+        "id":52,
+        "rank":"S+",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"斗牛级-脉冲型",
+        "shortname":"斗牛脉冲",
+        "popularity": 2
+    },
+    {
+        "id":53,
+        "rank":"S",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"斗牛级-突击型",
+        "shortname":"斗牛突击",
+        "popularity": 0
+    },
+    {
+        "id":54,
+        "rank":"S",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"斗牛级-防护型",
+        "shortname":"斗牛防护",
+        "popularity": 0
+    },
+    {
+        "id":55,
+        "rank":"S",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"创神星级-轨道炮型",
+        "shortname":"创神轨道",
+        "popularity": 1
+    },
+    {
+        "id":56,
+        "rank":"S",
+        "type":"qzj",
+        "typecn":"驱逐舰",
+        "name":"创神星级-鱼雷型",
+        "shortname":"创神鱼雷",
+        "popularity": 0
+    },
+    {
+        "id":57,
+        "rank":"C",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"FG300型-多功能型",
+        "shortname":"FG功能",
+        "popularity": 0
+    },
+    {
+        "id":58,
+        "rank":"A",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"FG300型-装甲型",
+        "shortname":"FG装甲",
+        "popularity": 1
+    },
+    {
+        "id":59,
+        "rank":"C",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"FG300型-侦察型",
+        "shortname":"FG侦察",
+        "popularity": 0
+    },
+    {
+        "id":60,
+        "rank":"B",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"静海级-综合型",
+        "shortname":"静海综合",
+        "popularity": 0
+    },
+    {
+        "id":61,
+        "rank":"A",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"静海级-脉冲型",
+        "shortname":"静海脉冲",
+        "popularity": 0
+    },
+    {
+        "id":62,
+        "rank":"B",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"静海级-防空型",
+        "shortname":"静海防空",
+        "popularity": 0
+    },
+    {
+        "id":63,
+        "rank":"A",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"云海级-突击型",
+        "shortname":"云海突击",
+        "popularity": 0
+    },
+    {
+        "id":64,
+        "rank":"C",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"云海级-防空型",
+        "shortname":"云海防空",
+        "popularity": 0
+    },
+    {
+        "id":65,
+        "rank":"A",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"澄海级-对舰型",
+        "shortname":"澄海对舰",
+        "popularity": 1
+    },
+    {
+        "id":66,
+        "rank":"S",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"澄海级-导弹型",
+        "shortname":"澄海导弹",
+        "popularity": 0
+    },
+    {
+        "id":67,
+        "rank":"B",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"澄海级-防空型",
+        "shortname":"澄海防空",
+        "popularity": 0
+    },
+    {
+        "id":68,
+        "rank":"S+",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"刺水母级-特种型",
+        "shortname":"水母特种",
+        "popularity": 1
+    },
+    {
+        "id":69,
+        "rank":"S",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"刺水母级-防空型",
+        "shortname":"水母防空",
+        "popularity": 0
+    },
+    {
+        "id":70,
+        "rank":"S",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"红宝石级-轨道炮型",
+        "shortname":"红宝石轨道",
+        "popularity": 1
+    },
+    {
+        "id":71,
+        "rank":"S+",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"红宝石级-离子炮型",
+        "shortname":"红宝石离子",
+        "popularity": 1
+    },
+    {
+        "id":72,
+        "rank":"A",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"红宝石级-防护型",
+        "shortname":"红宝石防护",
+        "popularity": 0
+    },
+    {
+        "id":73,
+        "rank":"A",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"诺玛M470级-攻城型",
+        "shortname":"诺玛攻城",
+        "popularity": 0
+    },
+    {
+        "id":74,
+        "rank":"S",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"诺玛M470级-支援型",
+        "shortname":"诺玛支援",
+        "popularity": 0
+    },
+    {
+        "id":75,
+        "rank":"C",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"诺玛M470级-防空型",
+        "shortname":"诺玛防空",
+        "popularity": 0
+    },
+    {
+        "id":76,
+        "rank":"B",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"卡利莱恩级-侦察型",
+        "shortname":"卡利莱侦察",
+        "popularity": 0
+    },
+    {
+        "id":77,
+        "rank":"A",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"卡利莱恩级-重炮型",
+        "shortname":"卡利莱重炮",
+        "popularity": 0
+    },
+    {
+        "id":78,
+        "rank":"S+",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"卡利莱恩级-特种型",
+        "shortname":"卡利莱特种",
+        "popularity": 1
+    },
+    {
+        "id":79,
+        "rank":"B",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"雷里亚特级-对舰型",
+        "shortname":"雷里对舰",
+        "popularity": 1
+    },
+    {
+        "id":80,
+        "rank":"S+",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"雷里亚特级-鱼雷型",
+        "shortname":"雷里鱼雷",
+        "popularity": 1
+    },
+    {
+        "id":81,
+        "rank":"S",
+        "type":"hwj",
+        "typecn":"护卫舰",
+        "name":"雷里亚特级-隐身型",
+        "shortname":"雷里隐身",
+        "popularity": 1
+    },
+    {
+        "id":82,
+        "rank":"C",
+        "type":"hht",
+        "typecn":"护航艇",
+        "name":"CV-II003型",
+        "shortname":"CV003",
+        "popularity": 0
+    },
+    {
+        "id":83,
+        "rank":"C",
+        "type":"hht",
+        "typecn":"护航艇",
+        "name":"CV-M011型-导弹型",
+        "shortname":"CV011导弹",
+        "popularity": 0
+    },
+    {
+        "id":84,
+        "rank":"C",
+        "type":"hht",
+        "typecn":"护航艇",
+        "name":"CV-M011型-火炮型",
+        "shortname":"CV011火炮",
+        "popularity": 0
+    },
+    {
+        "id":85,
+        "rank":"C",
+        "type":"hht",
+        "typecn":"护航艇",
+        "name":"鳐",
+        "shortname":"鳐",
+        "popularity": 0
+    },
+    {
+        "id":86,
+        "rank":"B",
+        "type":"hht",
+        "typecn":"护航艇",
+        "name":"RB7-13型",
+        "shortname":"RB7-13",
+        "popularity": 0
+    },
+    {
+        "id":87,
+        "rank":"A",
+        "type":"hht",
+        "typecn":"护航艇",
+        "name":"虚灵",
+        "shortname":"虚灵",
+        "popularity": 1
+    },
+    {
+        "id":88,
+        "rank":"S+",
+        "type":"hht",
+        "typecn":"护航艇",
+        "name":"蜂巢守卫者",
+        "shortname":"蜂巢",
+        "popularity": 1
+    },
+    {
+        "id":89,
+        "rank":"S+",
+        "type":"hht",
+        "typecn":"护航艇",
+        "name":"CV-T800型",
+        "shortname":"T800",
+        "popularity": 2
+    },
+    {
+        "id":90,
+        "rank":"B",
+        "type":"hht",
+        "typecn":"护航艇",
+        "name":"星云追逐者-炮弹型",
+        "shortname":"星云炮弹",
+        "popularity": 0
+    },
+    {
+        "id":91,
+        "rank":"S+",
+        "type":"hht",
+        "typecn":"护航艇",
+        "name":"星云追逐者-脉冲型",
+        "shortname":"星云脉冲",
+        "popularity": 2
+    },
+    {
+        "id":92,
+        "rank":"C",
+        "type":"zj",
+        "typecn":"战机",
+        "name":"SC002型",
+        "shortname":"SC002",
+        "popularity": 0
+    },
+    {
+        "id":93,
+        "rank":"A",
+        "type":"zj",
+        "typecn":"战机",
+        "name":"砂龙",
+        "shortname":"砂龙",
+        "popularity": 1
+    },
+    {
+        "id":94,
+        "rank":"A",
+        "type":"zj",
+        "typecn":"战机",
+        "name":"牛蛙型",
+        "shortname":"牛蛙",
+        "popularity": 0
+    },
+    {
+        "id":95,
+        "rank":"S",
+        "type":"zj",
+        "typecn":"战机",
+        "name":"林鸮A100型",
+        "shortname":"林鸮",
+        "popularity": 1
+    },
+    {
+        "id":96,
+        "rank":"B",
+        "type":"zj",
+        "typecn":"战机",
+        "name":"平衡安德森SC020",
+        "shortname":"安德森",
+        "popularity": 0
+    },
+    {
+        "id":97,
+        "rank":"S",
+        "type":"zj",
+        "typecn":"战机",
+        "name":"维塔斯A021",
+        "shortname":"维A",
+        "popularity": 2
+    },
+    {
+        "id":98,
+        "rank":"S+",
+        "type":"zj",
+        "typecn":"战机",
+        "name":"维塔斯-B010",
+        "shortname":"维B",
+        "popularity": 2
+    },
+    {
+        "id":99,
+        "rank":"S",
+        "type":"zj",
+        "typecn":"战机",
+        "name":"B192新大地",
+        "shortname":"新大地",
+        "popularity": 1
+    },
+    {
+        "id":100,
+        "rank":"A",
+        "type":"zj",
+        "typecn":"战机",
+        "name":"孢子A404",
+        "shortname":"孢子",
+        "popularity": 1
+    },
+    {
+        "id":101,
+        "rank":"S",
+        "type":"zj",
+        "typecn":"战机",
+        "name":"刺鳐",
+        "shortname":"刺鳐",
+        "popularity": 1
+    },
+    {
+        "id":102,
+        "rank":"C",
+        "type":"zj",
+        "typecn":"战机",
+        "name":"佩刀Aer410",
+        "shortname":"佩刀",
+        "popularity": 0
+    },
+    {
+        "id":103,
+        "rank":"S+",
+        "type":"zj",
+        "typecn":"战机",
+        "name":"米斯特拉",
+        "shortname":"米斯特拉",
+        "popularity": 2
+    },
+    {
+        "id":105,
+        "rank":"A",
+        "type":"zyj",
+        "typecn":"支援舰",
+        "name":"FSV830-快速战术支援舰",
+        "shortname":"FSV830",
+        "popularity": 0
+    },
+    {
+        "id":106,
+        "rank":"S+",
+        "type":"zj",
+        "typecn":"战机",
+        "name":"海氏追随者",
+        "shortname":"海氏",
+        "popularity": 2
+    }
+]

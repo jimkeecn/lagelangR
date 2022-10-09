@@ -1,0 +1,42 @@
+
+.return{
+    padding-top:20px;
+    position: relative;
+}
+.body{
+    display:flex;
+    flex-direction: column;
+}
+
+.mat-card{
+    width:100%;
+    box-sizing: border-box;
+}
+
+.mat-card input{
+    margin-left: 10px;
+    position: relative;
+    bottom: 2px;
+    border: 2px solid #222;
+    width: 50px;
+    text-align: center;
+    font-size:1rem !important;
+}
+
+.mat-card-content{
+    font-size:0.8rem !important;
+}
+
+.mat-raised-button{
+    margin-top:40px;
+    padding:20px;
+}
+
+.actions{
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions .mat-raised-button{
+    width:50%;
+}
