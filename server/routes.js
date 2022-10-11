@@ -83,7 +83,6 @@ router.post("/data/:id/:id2", async (req, res, next) => {
     res.json(playerInfo);
   } catch (ex) {
     res.json({ return: "error occurs" });
-    next(ex);
   }
 });
 
@@ -120,7 +119,6 @@ router.post("/edit/:id/:id2", async (req, res, next) => {
     res.json(playerInfo);
   } catch (ex) {
     res.json({ return: "发生错误。。" });
-    next(ex);
     return;
   }
 });
@@ -163,7 +161,6 @@ router.get("/data/:id", async (req, res, next) => {
     res.json(data);
   } catch (ex) {
     res.json({ return: "error occurs" });
-    next(ex);
   }
 });
 
@@ -177,7 +174,6 @@ router.get("/data/:id/:id2", async (req, res, next) => {
     res.json(data);
   } catch (ex) {
     res.json({ return: "error occurs" });
-    next(ex);
   }
 });
 
@@ -227,7 +223,6 @@ router.post("/createAccount", async (req, res, next) => {
     }
   } catch (ex) {
     res.status(400).json({ return: "注册发生错误...请重新检查填写信息" });
-    next(ex);
     return;
   }
 });
@@ -248,7 +243,6 @@ router.post("/loginWithPassword", async (req, res, next) => {
     }
   } catch (ex) {
     res.status(400).json({ return: "登录发生错误" });
-    next(ex);
     return;
   }
 });
@@ -277,7 +271,6 @@ router.post("/getGuildCode", async (req, res, next) => {
     return;
   } catch (ex) {
     res.status(400).json({ return: "发生错误" });
-    next(ex);
     return;
   }
 });
