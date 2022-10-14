@@ -46,7 +46,8 @@ import { RegisterComponent } from './register/register.component';
 
 //Date
 import { MAT_MOMENT_DATE_ADAPTER_OPTIONS } from '@angular/material-moment-adapter'
-
+//notifier
+import { NotifierModule } from 'angular-notifier';
 @NgModule({
   declarations: [
     AppComponent,
@@ -94,7 +95,8 @@ import { MAT_MOMENT_DATE_ADAPTER_OPTIONS } from '@angular/material-moment-adapte
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    NotifierModule
   ],
   providers: [{ provide: MAT_MOMENT_DATE_ADAPTER_OPTIONS, useValue: { useUtc: true } }],
   //providers: [],

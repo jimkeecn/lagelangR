@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { NotifierService } from 'angular-notifier';
 import { Org } from '../models/org';
 import { Player } from '../models/player';
 import { warship, warshipGroup } from '../models/warship';
@@ -11,7 +12,7 @@ import { DataService } from "../services/service.service"
   styleUrls: ['./edit.component.scss']
 })
 export class EditComponent implements OnInit {
-
+  private readonly notifier: NotifierService;
   code: string = "";
   logId: string = "";
   warshipJson:warship[] = [];
@@ -21,7 +22,8 @@ export class EditComponent implements OnInit {
   playerCode: string = "";
   warshipList: warship[] = [];
   warshipGroup : warshipGroup[] = []
-  constructor(private activeRoute: ActivatedRoute, private route: Router, private dataService : DataService) { 
+  constructor(private activeRoute: ActivatedRoute, private route: Router, private dataService : DataService,notifierService: NotifierService) { 
+    this.notifier = notifierService;
     activeRoute.params.subscribe(x => { 
       this.code = x['code'];
       this.logId = x['id'];
@@ -99,9 +101,9 @@ export class EditComponent implements OnInit {
     }
     this.dataService.editPlayerData(this.code, player).subscribe({
       next: x => {
-        alert('修改成功');
+        this.notifier.notify('success','修改成功')
         this.route.navigate(['/data', this.code])
-      }, error: (err) => { alert(err.error.return); }
+      }, error: (err) => { this.notifier.notify('error',err.error.return)}
       });
     
   }
@@ -120,9 +122,10 @@ export class EditComponent implements OnInit {
       }
       this.dataService.delelePlayer(this.code, player).subscribe({
         next: x => {
-          alert('删除成功');
+          //alert('删除成功');
+          this.notifier.notify('error','删除成功')
           this.route.navigate(['/data', this.code])
-        }, error: (err) => { alert(err.error.return); }
+        }, error: (err) => { this.notifier.notify('error',err.error.return) }
         });
     }
   }

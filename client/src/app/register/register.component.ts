@@ -2,6 +2,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { NotifierService } from 'angular-notifier';
 import { DataService } from '../services/service.service';
 
 @Component({
@@ -10,10 +11,11 @@ import { DataService } from '../services/service.service';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
+  private readonly notifier: NotifierService;
   isShow: boolean = false;
   code: string = "";
   codeCompleted:boolean = false;
-  constructor(private dataService:DataService,private route:Router) { }
+  constructor(private dataService:DataService,private route:Router,notifierService: NotifierService) { this.notifier = notifierService;}
 
   registerForm = new FormGroup({
     name: new FormControl('', [Validators.required]),
@@ -47,14 +49,17 @@ export class RegisterComponent implements OnInit {
           },
           error: (err) => { 
             console.log(err);
-            alert(err.error.return);
+            //alert(err.error.return);
+            this.notifier.notify('success',err.error.return)
           }
         })
       } else {
-        alert("两次密码输入不相同")
+        //alert("两次密码输入不相同")
+        this.notifier.notify('error','两次密码输入不相同')
       }
     } else {
-      alert('请输入符合规格的名字生日和密码');
+      //alert('请输入符合规格的名字生日和密码');
+      this.notifier.notify('error','清输入符合规格的名字和密码')
     }
   }
 

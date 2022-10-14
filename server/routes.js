@@ -260,10 +260,8 @@ router.post("/getGuildCode", async (req, res, next) => {
     let accountId = generateAccountId(content.name, content.birthday);
     let data = await mdb.getData("/");
     let code = "";
-
     for (let x in data) {
       if (data[x].hasOwnProperty("accountId")) {
-        console.log("check log2", data[x]);
         if (data[x].accountId == accountId) {
           code = data[x].guildId;
         }

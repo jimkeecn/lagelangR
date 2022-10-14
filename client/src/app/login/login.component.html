@@ -32,7 +32,8 @@
         <mat-label>生日</mat-label>
         <input matInput type="date" formControlName="birthday">
       </mat-form-field>
-      <button mat-raised-button color="primary" (click)="findCode()">寻找口令</button>
+      <button mat-raised-button color="primary" (click)="findCode()" *ngIf="!isFound">寻找口令</button>
+      <h2 *ngIf="!isFound">您的口令是:{{foundCode}}</h2>
        <div class="bottom-container">
         <a class="register" (click)="isFindCode = !isFindCode">{{isFindCode ? '返回登录' : '寻找口令'}}</a>
       </div>

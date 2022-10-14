@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { NotifierService } from 'angular-notifier';
 import { Org } from '../models/org';
 import { Player } from '../models/player';
 import { warship, warshipGroup } from '../models/warship';
@@ -12,6 +13,8 @@ import { DataService } from "../services/service.service"
 })
 export class AddComponent implements OnInit {
 
+  private readonly notifier: NotifierService;
+  
   code: string = "";
   warshipJson:warship[] = [];
   warships = new FormControl([]);
@@ -20,7 +23,8 @@ export class AddComponent implements OnInit {
   playerCode: string = "";
   warshipList: warship[] = [];
   warshipGroup : warshipGroup[] = []
-  constructor(private activeRoute: ActivatedRoute, private route: Router, private dataService : DataService) { 
+  constructor(private activeRoute: ActivatedRoute, private route: Router, private dataService: DataService, notifierService: NotifierService) { 
+    this.notifier = notifierService;
     this.buildWarshipList();
     activeRoute.params.subscribe(x => { 
       this.code = x['code'];
@@ -56,7 +60,7 @@ export class AddComponent implements OnInit {
     this.dataService.savePlayerData(this.code, player).subscribe({
       next: x => {
         this.route.navigate(['/data', this.code])
-      }, error: (err) => { alert(err.error.return); }
+      }, error: (err) => { this.notifier.notify('error',err.error.return) }
       });
     
   }
