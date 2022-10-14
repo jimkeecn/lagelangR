@@ -25,3 +25,30 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Deploy UI
+
+- Login
+
+```sh
+cd C:/Users/User/Desktop/angularhots/WuJinDeLaGeLangRi
+ssh -i "my-new-web-server-key.pem" ubuntu@18.181.190.201
+```
+
+- Go to app directory
+
+```sh
+cd app && git pull
+```
+
+- Backend changes
+
+```sh
+  pm2 restart/reload backend-app
+```
+
+- Frontend changes
+
+```sh
+  rm -rf /var/www/lglrcx.com/html/* && cp -rf ~/app/client/build/* /var/www/lglrcx.com/html/
+```

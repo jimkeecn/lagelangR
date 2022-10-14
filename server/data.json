@@ -953,5 +953,14 @@
         "name":"海氏追随者",
         "shortname":"海氏",
         "popularity": 2
+    },
+    {
+        "id":107,
+        "rank":"C",
+        "type":"hht",
+        "typecn":"护航艇",
+        "name":"S-列维9号",
+        "shortname":"列维9",
+        "popularity": 0
     }
 ]

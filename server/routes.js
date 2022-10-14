@@ -4,10 +4,13 @@ import validator from "validator";
 import bcrypt from "bcrypt";
 import { JsonDB } from "node-json-db";
 import { Config } from "node-json-db/dist/lib/JsonDBConfig.js";
+import path from "path";
 
 const router = express.Router();
 
-var shipArray = JSON.parse(fs.readFileSync("./data.json", "utf8"));
+var shipArray = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "data.json"), "utf8"),
+);
 function sortShipArrayByPopularity() {
   shipArray.sort((a, b) => (a.popularity < b.popularity ? 1 : -1));
 }
@@ -47,8 +50,10 @@ class Warship {
   }
 }
 
+const dbPath = path.join(__dirname, "..", "..", "DB", "MainDB");
+const mdbPath = path.join(__dirname, "..", "..", "DB", "ManagementDB");
 //Create a new log for a guild
-var db = new JsonDB(new Config("MainDB", true, false, "/"));
+var db = new JsonDB(new Config(dbPath, true, false, "/"));
 router.post("/data/:id/:id2", async (req, res, next) => {
   try {
     let guild_id = req.params.id;
@@ -178,7 +183,7 @@ router.get("/data/:id/:id2", async (req, res, next) => {
 });
 
 //management API
-var mdb = new JsonDB(new Config("ManagementDB", true, false, "/"));
+var mdb = new JsonDB(new Config(mdbPath, true, false, "/"));
 const management_password = "123456789Ab!";
 
 class Guild {
