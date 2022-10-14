@@ -5,7 +5,9 @@ import bcrypt from "bcrypt";
 import { JsonDB } from "node-json-db";
 import { Config } from "node-json-db/dist/lib/JsonDBConfig.js";
 import path from "path";
-
+import * as url from "url";
+const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
+console.log("RootPath", __dirname);
 const router = express.Router();
 
 var shipArray = JSON.parse(
