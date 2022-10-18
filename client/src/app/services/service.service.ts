@@ -13,6 +13,10 @@ export class DataService {
   url = environment.API_END_POINT;
   constructor(private http:HttpClient) { }
 
+  getUserCount(): Observable<any>{
+    let url = `${this.url}/userCount`;
+    return this.http.get<any>(url);
+  }
 
   getPlayerData(orgId: string): Observable<any[]>{
     let url = `${this.url}/data/${orgId}`;

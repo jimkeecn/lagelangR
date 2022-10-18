@@ -31,7 +31,11 @@ export class LoginComponent implements OnInit {
     this.notifier = notifierService;
   }
 
+  userCount: number = 0;
   ngOnInit(): void {
+    this.dataService.getUserCount().subscribe(x => { 
+      this.userCount = x.return;
+    })
   }
 
   login(): void{

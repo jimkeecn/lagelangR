@@ -280,6 +280,17 @@ router.post("/getGuildCode", async (req, res, next) => {
   }
 });
 
+router.post("/userCount", async (req, res, next) => {
+  try {
+    let counter = await mdb.get("/counter");
+    res.status(200).json({ return: counter });
+    return;
+  } catch (ex) {
+    res.status(400).json({ return: "发生错误" });
+    return;
+  }
+});
+
 async function hashIt(password) {
   const salt = await bcrypt.genSalt(6);
   const hashed = await bcrypt.hash(password, salt);
