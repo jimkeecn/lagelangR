@@ -282,7 +282,8 @@ router.post("/getGuildCode", async (req, res, next) => {
 
 router.get("/userCount", async (req, res, next) => {
   try {
-    let counter = await mdb.get("/counter");
+    let counter = await mdb.getData("/counter");
+    console.log("User Counts: " + counter);
     res.status(200).json({ return: counter });
     return;
   } catch (ex) {

@@ -33,8 +33,14 @@ export class LoginComponent implements OnInit {
 
   userCount: number = 0;
   ngOnInit(): void {
-    this.dataService.getUserCount().subscribe(x => { 
-      this.userCount = x.return;
+    this.dataService.getUserCount().subscribe({
+      next: (x) => {
+        this.userCount = x.return;
+      },
+      error: (err) => { 
+        //alert(err.error.return);
+        this.notifier.notify('error','用户人数: ' + err.error.return)
+      }
     })
   }
 
